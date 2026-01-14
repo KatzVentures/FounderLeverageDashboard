@@ -383,7 +383,7 @@ export default function ResultsPage() {
           <div className="flex flex-col items-center mb-8">
             <div className="relative" style={{ width: '300px', height: '300px', marginBottom: '24px' }}>
               <svg width="300" height="300" viewBox="0 0 200 200">
-                {pieSegments.map((segment, index) => (
+                {pieSegments.map((segment: { category: string; percentage: number; color: string; path: string; startAngle: number; endAngle: number }, index) => (
                   <motion.path
                     key={segment.category}
                     d={segment.path}
