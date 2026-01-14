@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -19,8 +22,182 @@
   }
 }
 
+html {
+  background: transparent;
+  min-height: 100vh;
+}
+
 body {
-  background: var(--background);
+  background: transparent !important;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Animated gradient background */
+@keyframes gradientShift {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Animated texture movement */
+@keyframes textureMove {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(15px, -8px);
+  }
+  66% {
+    transform: translate(-8px, 15px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes noiseAnimation {
+  0% {
+    background-position: 0% 0%;
+    opacity: 0.1;
+  }
+  50% {
+    background-position: 100% 100%;
+    opacity: 0.2;
+  }
+  100% {
+    background-position: 0% 0%;
+    opacity: 0.1;
+  }
+}
+
+/* Noise texture pattern */
+.noise-texture {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  opacity: 0.02;
+  pointer-events: none;
+}
+
+/* Beam Border Animation with @property */
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes parallax {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(-20px) translateX(10px);
+  }
+}
+
+@keyframes revealText {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes rotate {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+.beam-border-card {
+  --angle: 0deg;
+  border: 2px solid;
+  border-image: linear-gradient(var(--angle), #EDDF00, #536878) 1;
+  animation: rotate 3000ms linear infinite;
+}
+
+/* 3D Flip Card Styles */
+.flip-card-container {
+  perspective: 1000px;
+  width: 100%;
+  display: block;
+  flex-shrink: 0;
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+}
+
+.flip-card {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  transform-style: preserve-3d;
+  transition: transform 600ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.flip-card:hover {
+  transform: rotateY(180deg);
+}
+
+.flip-card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-card-front {
+  transform: rotateY(0deg);
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .beam-border-card {
+    animation: none;
+    border: 2px solid #536878;
+  }
+
+  .arrow-path {
+    animation: none !important;
+    stroke-dashoffset: 0 !important;
+  }
+
+  .flip-card {
+    transition: none;
+  }
+
+  .flip-card:hover {
+    transform: none;
+  }
 }
