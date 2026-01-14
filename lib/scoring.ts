@@ -9,8 +9,10 @@ import { CALCULATION_CONSTANTS } from './calculation-formulas';
 import { HOURLY_RATE, calculateWeeklyValue, calculateMonthlyValue } from './mock-results';
 
 export interface AssessmentResponses {
-  [questionId: string]: string | boolean;
+  [questionId: string]: string | boolean | undefined;
   email?: string;
+  name?: string;
+  revenueRange?: string;
 }
 
 export interface EmailCalendarData {
