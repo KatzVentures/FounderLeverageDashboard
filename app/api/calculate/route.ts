@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Generate results from assessment answers only (no email/calendar data)
-    const results = generateResults(session.assessmentAnswers);
+    const results: any = generateResults(session.assessmentAnswers);
     
     // Add metadata
     results.meta = {
