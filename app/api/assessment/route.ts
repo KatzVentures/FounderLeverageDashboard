@@ -26,7 +26,7 @@ export async function POST(request: NextRequest) {
     
     // Calculate results directly from assessment answers (no email/calendar data)
     console.log('[ASSESSMENT] Generating results...');
-    let results;
+    let results: any;
     try {
       results = generateResults(answers);
       console.log('[ASSESSMENT] Results generated, score:', results.score);
