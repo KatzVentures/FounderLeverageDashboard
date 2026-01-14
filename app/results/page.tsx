@@ -259,7 +259,7 @@ export default function ResultsPage() {
   // Build pie chart segments for time categories
   const timeCategories = results.timeCategories || [];
   let currentAngle = -Math.PI / 2; // Start at top
-  const pieSegments = timeCategories.map((item) => {
+  const pieSegments = timeCategories.map((item: { category: string; percentage: number; color: string }) => {
     const percentage = item.percentage / 100;
     const segmentAngle = 2 * Math.PI * percentage;
     const startAngle = currentAngle;
