@@ -146,7 +146,7 @@ export default function HowItWorksPage() {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {scoringComponents.map((component, index) => (
+            {scoringComponents.map((component: any, index: number) => (
               <motion.div
                 key={component.name}
                 initial={{ opacity: 0, y: 50 }}
@@ -208,7 +208,7 @@ export default function HowItWorksPage() {
                     Data Sources
                   </div>
                   <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                    {component.dataSources.map((source, idx) => (
+                    {component.dataSources.map((source: string, idx: number) => (
                       <li
                         key={idx}
                         style={{
@@ -257,7 +257,7 @@ export default function HowItWorksPage() {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {scoreRanges.map((range, index) => (
+            {scoreRanges.map((range: any, index: number) => (
               <motion.div
                 key={range.name}
                 initial={{ opacity: 0, y: 50 }}
@@ -334,7 +334,7 @@ export default function HowItWorksPage() {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {dataWeCollect.items.map((item, index) => (
+            {dataWeCollect.items.map((item: any, index: number) => (
               <motion.div
                 key={item.source}
                 initial={{ opacity: 0, y: 30 }}

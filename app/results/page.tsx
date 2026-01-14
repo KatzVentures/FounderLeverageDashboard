@@ -402,7 +402,7 @@ export default function ResultsPage() {
             
             {/* Legend */}
             <div style={{ display: 'flex', gap: '32px', flexWrap: 'wrap', justifyContent: 'center' }}>
-              {timeCategories.map((category) => (
+              {timeCategories.map((category: { category: string; percentage: number; color: string }) => (
                 <div key={category.category} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <div
                     style={{

@@ -528,7 +528,7 @@ export default function Home() {
 
                     {/* Questions */}
                     <div>
-                      {currentSectionData.questions.map((question, index) => (
+                      {currentSectionData.questions.map((question: any, index: number) => (
                         <div
                           key={question.id}
                           style={{
@@ -582,7 +582,7 @@ export default function Home() {
                               <option value="" style={{ color: '#000' }}>
                                 Select an option
                               </option>
-                              {question.options?.map((option) => (
+                              {question.options?.map((option: string) => (
                                 <option key={option} value={option} style={{ color: '#000' }}>
                                   {option}
                                 </option>
