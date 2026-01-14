@@ -13,10 +13,10 @@ export default function HowItWorksPage() {
   const dataRef = useRef<HTMLDivElement>(null);
   const privacyRef = useRef<HTMLDivElement>(null);
   
-  const componentsInView = useInView(componentsRef, { once: true, threshold: 0.1 });
-  const rangesInView = useInView(rangesRef, { once: true, threshold: 0.1 });
-  const dataInView = useInView(dataRef, { once: true, threshold: 0.1 });
-  const privacyInView = useInView(privacyRef, { once: true, threshold: 0.3 });
+  const componentsInView = useInView(componentsRef, { once: true, amount: 0.1 });
+  const rangesInView = useInView(rangesRef, { once: true, amount: 0.1 });
+  const dataInView = useInView(dataRef, { once: true, amount: 0.1 });
+  const privacyInView = useInView(privacyRef, { once: true, amount: 0.3 });
 
   // Safety check - ensure data is loaded
   if (!scoringComponents || scoringComponents.length === 0) {
