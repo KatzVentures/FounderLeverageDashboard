@@ -192,8 +192,8 @@ export default function ResultsPage() {
   
   const barChartRef = useRef<HTMLDivElement>(null);
   const cardsRef = useRef<HTMLDivElement>(null);
-  const barChartInView = useInView(barChartRef, { once: true, threshold: 0.3 });
-  const cardsInView = useInView(cardsRef, { once: true, threshold: 0.3 });
+  const barChartInView = useInView(barChartRef, { once: true, amount: 0.3 });
+  const cardsInView = useInView(cardsRef, { once: true, amount: 0.3 });
 
   useEffect(() => {
     setMounted(true);
