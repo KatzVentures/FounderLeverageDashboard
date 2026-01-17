@@ -421,7 +421,7 @@ export default function Home() {
                       <h2
                         style={{
                           fontFamily: "'Bebas Neue', sans-serif",
-                          fontSize: '1.5rem',
+                          fontSize: '1.725rem',
                           color: '#FFFFFF',
                           letterSpacing: '0.05em',
                           marginBottom: '24px',
@@ -438,7 +438,7 @@ export default function Home() {
                           backgroundColor: '#EDDF00',
                           color: '#000000',
                           fontFamily: "'Bebas Neue', sans-serif",
-                          fontSize: '1.125rem',
+                          fontSize: '1.294rem',
                           padding: '12px 48px',
                           borderRadius: '8px',
                           border: 'none',
@@ -487,7 +487,7 @@ export default function Home() {
                         <h2
                           style={{
                             fontFamily: "'Bebas Neue', sans-serif",
-                            fontSize: '1.375rem',
+                            fontSize: '1.581rem',
                             color: '#FFFFFF',
                             letterSpacing: '0.05em',
                             marginBottom: '6px',
@@ -497,7 +497,7 @@ export default function Home() {
                         </h2>
                         <p
                           style={{
-                            fontSize: '0.8rem',
+                            fontSize: '0.92rem',
                             color: 'rgba(255, 255, 255, 0.7)',
                             marginBottom: '10px',
                           }}
@@ -538,7 +538,7 @@ export default function Home() {
                           <label
                             style={{
                               fontFamily: "'Bebas Neue', sans-serif",
-                              fontSize: '0.95rem',
+                              fontSize: '1.093rem',
                               color: '#FFFFFF',
                               letterSpacing: '0.05em',
                               display: 'block',
@@ -560,7 +560,7 @@ export default function Home() {
                                 borderRadius: '8px',
                                 color: '#FFFFFF',
                                 fontFamily: "'Bebas Neue', sans-serif",
-                                fontSize: '0.9rem',
+                                fontSize: '1.035rem',
                                 padding: '0 14px',
                                 cursor: 'pointer',
                                 outline: 'none',
@@ -631,7 +631,7 @@ export default function Home() {
                                     onClick={() => handleResponseChange(question.id, true)}
                                     style={{
                                       fontFamily: "'Bebas Neue', sans-serif",
-                                      fontSize: '0.9rem',
+                                      fontSize: '1.035rem',
                                       color: (responses[question.id] === true) ? '#EDDF00' : 'rgba(255, 255, 255, 0.5)',
                                       letterSpacing: '0.05em',
                                       transition: 'color 0.3s ease',
@@ -643,7 +643,7 @@ export default function Home() {
                                   <span
                                     style={{
                                       fontFamily: "'Bebas Neue', sans-serif",
-                                      fontSize: '0.9rem',
+                                      fontSize: '1.035rem',
                                       color: 'rgba(255, 255, 255, 0.5)',
                                       letterSpacing: '0.05em',
                                     }}
@@ -654,7 +654,7 @@ export default function Home() {
                                     onClick={() => handleResponseChange(question.id, false)}
                                     style={{
                                       fontFamily: "'Bebas Neue', sans-serif",
-                                      fontSize: '0.9rem',
+                                      fontSize: '1.035rem',
                                       color: (responses[question.id] !== true) ? '#EDDF00' : 'rgba(255, 255, 255, 0.5)',
                                       letterSpacing: '0.05em',
                                       transition: 'color 0.3s ease',
@@ -685,7 +685,7 @@ export default function Home() {
                           backgroundColor: 'rgba(83, 104, 120, 0.3)',
                           color: '#FFFFFF',
                           fontFamily: "'Bebas Neue', sans-serif",
-                          fontSize: '1.125rem',
+                          fontSize: '1.294rem',
                           padding: '12px 32px',
                           borderRadius: '8px',
                           border: 'none',
@@ -710,7 +710,7 @@ export default function Home() {
                           backgroundColor: '#EDDF00',
                           color: '#000000',
                           fontFamily: "'Bebas Neue', sans-serif",
-                          fontSize: '1.125rem',
+                          fontSize: '1.294rem',
                           padding: '12px 48px',
                           borderRadius: '8px',
                           border: 'none',
@@ -737,7 +737,7 @@ export default function Home() {
                     {errorMessage && (
                       <p
                         style={{
-                          fontSize: '0.875rem',
+                          fontSize: '1.006rem',
                           color: '#EDDF00',
                           marginTop: '16px',
                           textAlign: 'center',
@@ -761,7 +761,7 @@ export default function Home() {
                         <h2
                           style={{
                             fontFamily: "'Bebas Neue', sans-serif",
-                            fontSize: '1.375rem',
+                            fontSize: '1.581rem',
                             color: '#FFFFFF',
                             letterSpacing: '0.05em',
                             marginBottom: '6px',
@@ -771,7 +771,7 @@ export default function Home() {
                         </h2>
                         <p
                           style={{
-                            fontSize: '0.8rem',
+                            fontSize: '0.92rem',
                             color: 'rgba(255, 255, 255, 0.7)',
                             marginBottom: '10px',
                           }}
@@ -805,7 +805,7 @@ export default function Home() {
                         <label
                           style={{
                             fontFamily: "'Bebas Neue', sans-serif",
-                            fontSize: '0.95rem',
+                            fontSize: '1.093rem',
                             color: '#FFFFFF',
                             letterSpacing: '0.05em',
                             display: 'block',
@@ -830,7 +830,7 @@ export default function Home() {
                             borderRadius: '8px',
                             color: '#FFFFFF',
                             fontFamily: "'Bebas Neue', sans-serif",
-                            fontSize: '0.9rem',
+                            fontSize: '1.035rem',
                             padding: '0 14px',
                             outline: 'none',
                           }}
@@ -850,7 +850,7 @@ export default function Home() {
                         <label
                           style={{
                             fontFamily: "'Bebas Neue', sans-serif",
-                            fontSize: '0.95rem',
+                            fontSize: '1.093rem',
                             color: '#FFFFFF',
                             letterSpacing: '0.05em',
                             display: 'block',
@@ -875,7 +875,7 @@ export default function Home() {
                             borderRadius: '8px',
                             color: '#FFFFFF',
                             fontFamily: "'Bebas Neue', sans-serif",
-                            fontSize: '0.9rem',
+                            fontSize: '1.035rem',
                             padding: '0 14px',
                             outline: 'none',
                           }}
@@ -895,7 +895,7 @@ export default function Home() {
                         <label
                           style={{
                             fontFamily: "'Bebas Neue', sans-serif",
-                            fontSize: '0.95rem',
+                            fontSize: '1.093rem',
                             color: '#FFFFFF',
                             letterSpacing: '0.05em',
                             display: 'block',
@@ -915,7 +915,7 @@ export default function Home() {
                             borderRadius: '8px',
                             color: '#FFFFFF',
                             fontFamily: "'Bebas Neue', sans-serif",
-                            fontSize: '0.9rem',
+                            fontSize: '1.035rem',
                             padding: '0 14px',
                             cursor: 'pointer',
                             outline: 'none',
@@ -960,7 +960,7 @@ export default function Home() {
                             backgroundColor: 'rgba(83, 104, 120, 0.3)',
                             color: '#FFFFFF',
                             fontFamily: "'Bebas Neue', sans-serif",
-                            fontSize: '1.125rem',
+                            fontSize: '1.294rem',
                             padding: '12px 32px',
                             borderRadius: '8px',
                             border: 'none',
@@ -985,7 +985,7 @@ export default function Home() {
                             backgroundColor: '#EDDF00',
                             color: '#000000',
                             fontFamily: "'Bebas Neue', sans-serif",
-                            fontSize: '1.125rem',
+                            fontSize: '1.294rem',
                             padding: '12px 48px',
                             borderRadius: '8px',
                             border: 'none',
@@ -1042,7 +1042,7 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 style={{
                   fontFamily: "'Bebas Neue', sans-serif",
-                  fontSize: '2.25rem',
+                  fontSize: '2.588rem',
                   color: '#FFFFFF',
                   marginBottom: '24px',
                   textAlign: 'center',

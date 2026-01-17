@@ -337,7 +337,7 @@ export default function ResultsPage() {
             transition={{ duration: 0.6 }}
             style={{
               fontFamily: "'Bebas Neue', sans-serif",
-              fontSize: '2.5rem',
+              fontSize: '2.875rem',
               letterSpacing: '0.05em',
               marginBottom: '24px',
             }}
@@ -356,7 +356,7 @@ export default function ResultsPage() {
             <span
               style={{
                 fontFamily: "'Bebas Neue', sans-serif",
-                fontSize: '6rem',
+                fontSize: '6.9rem',
                 fontWeight: 'bold',
                 color: '#EDDF00',
                 lineHeight: 1,
@@ -371,7 +371,7 @@ export default function ResultsPage() {
             transition={{ duration: 0.6, delay: 0.4 }}
             style={{
               fontFamily: tokens.typography.fontFamily,
-              fontSize: '1rem',
+              fontSize: '1.15rem',
               color: 'rgba(255, 255, 255, 0.7)',
               marginBottom: '48px',
             }}
@@ -412,7 +412,7 @@ export default function ResultsPage() {
                       borderRadius: '50%',
                     }}
                   />
-                  <span style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: '1rem', letterSpacing: '0.05em' }}>
+                  <span style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: '1.15rem', letterSpacing: '0.05em' }}>
                     {category.category}: {category.percentage}%
                   </span>
                 </div>
@@ -427,7 +427,7 @@ export default function ResultsPage() {
             transition={{ duration: 0.6, delay: 0.3 }}
             style={{
               fontFamily: "'Bebas Neue', sans-serif",
-              fontSize: '3rem',
+              fontSize: '3.45rem',
               letterSpacing: '0.05em',
               marginBottom: '1rem',
             }}
@@ -452,7 +452,7 @@ export default function ResultsPage() {
             transition={{ duration: 0.6, delay: 0.4 }}
             style={{
               fontFamily: tokens.typography.fontFamily,
-              fontSize: '1.125rem',
+              fontSize: '1.294rem',
               color: 'rgba(255, 255, 255, 0.8)',
               maxWidth: '600px',
               margin: '0 auto',
@@ -490,13 +490,13 @@ export default function ResultsPage() {
                 textAlign: 'center',
               }}
             >
-              <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: '2.5rem', color: tokens.colors.primary, marginBottom: '8px' }}>
+              <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: '2.875rem', color: tokens.colors.primary, marginBottom: '8px' }}>
                 {emailHoursDisplay}
               </div>
-              <div style={{ fontFamily: tokens.typography.fontFamily, fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.7)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>
+              <div style={{ fontFamily: tokens.typography.fontFamily, fontSize: '1.006rem', color: 'rgba(255, 255, 255, 0.7)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>
                 Hours/Month
               </div>
-              <div style={{ fontFamily: tokens.typography.fontFamily, fontSize: '0.875rem', color: tokens.colors.white, lineHeight: 1.4 }}>
+              <div style={{ fontFamily: tokens.typography.fontFamily, fontSize: '1.006rem', color: tokens.colors.white, lineHeight: 1.4 }}>
                 {emailHoursDisplay} hours/month on delegatable email coordination (approximately ${emailCost.cost.toLocaleString()})
               </div>
             </motion.div>
@@ -513,13 +513,13 @@ export default function ResultsPage() {
                 textAlign: 'center',
               }}
             >
-              <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: '2.5rem', color: tokens.colors.primary, marginBottom: '8px' }}>
+              <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: '2.875rem', color: tokens.colors.primary, marginBottom: '8px' }}>
                 ${meetingCost.monthlyCost.toLocaleString()}
               </div>
-              <div style={{ fontFamily: tokens.typography.fontFamily, fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.7)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>
+              <div style={{ fontFamily: tokens.typography.fontFamily, fontSize: '1.006rem', color: 'rgba(255, 255, 255, 0.7)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>
                 Monthly Overhead
               </div>
-              <div style={{ fontFamily: tokens.typography.fontFamily, fontSize: '0.875rem', color: tokens.colors.white, lineHeight: 1.4 }}>
+              <div style={{ fontFamily: tokens.typography.fontFamily, fontSize: '1.006rem', color: tokens.colors.white, lineHeight: 1.4 }}>
                 Your {meetingActualHoursDisplay} hours of meetings/week actually consume {meetingTrueHoursDisplay} hours—${meetingCost.monthlyCost.toLocaleString()}/month in meeting overhead
               </div>
             </motion.div>
@@ -536,10 +536,10 @@ export default function ResultsPage() {
                 textAlign: 'center',
               }}
             >
-              <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: '2.5rem', color: tokens.colors.primary, marginBottom: '8px' }}>
+              <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: '2.875rem', color: tokens.colors.primary, marginBottom: '8px' }}>
                 {results.responseLag?.pending || 0}
               </div>
-              <div style={{ fontFamily: tokens.typography.fontFamily, fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.7)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+              <div style={{ fontFamily: tokens.typography.fontFamily, fontSize: '1.006rem', color: 'rgba(255, 255, 255, 0.7)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
                 Pending Reply
               </div>
             </motion.div>
@@ -554,7 +554,7 @@ export default function ResultsPage() {
           <h2
             style={{
               fontFamily: "'Bebas Neue', sans-serif",
-              fontSize: '2rem',
+              fontSize: '2.3rem',
               letterSpacing: '0.05em',
               marginBottom: '32px',
               textAlign: 'center',
@@ -633,10 +633,10 @@ export default function ResultsPage() {
                       }}
               >
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                  <span style={{ fontFamily: tokens.typography.fontFamily, fontSize: '1rem', color: tokens.colors.white }}>
+                  <span style={{ fontFamily: tokens.typography.fontFamily, fontSize: '1.15rem', color: tokens.colors.white }}>
                     {item.category}
                   </span>
-                  <span style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: '1.25rem', color: tokens.colors.primary }}>
+                  <span style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: '1.438rem', color: tokens.colors.primary }}>
                     {item.percentage}%
                   </span>
                 </div>
@@ -677,7 +677,7 @@ export default function ResultsPage() {
           <h2
             style={{
               fontFamily: "'Bebas Neue', sans-serif",
-              fontSize: '2rem',
+              fontSize: '2.3rem',
               letterSpacing: '0.05em',
               marginBottom: '24px',
               textAlign: 'center',
@@ -692,22 +692,22 @@ export default function ResultsPage() {
               padding: '32px',
             }}
           >
-                <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: '1.5rem', color: tokens.colors.primary, marginBottom: '16px' }}>
+                <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: '1.725rem', color: tokens.colors.primary, marginBottom: '16px' }}>
                   {results.timeLeak?.totalHoursWasted || 0} hours/week wasted
                 </div>
-                <p style={{ fontFamily: tokens.typography.fontFamily, fontSize: '1rem', color: tokens.colors.white, marginBottom: '16px', lineHeight: 1.6 }}>
+                <p style={{ fontFamily: tokens.typography.fontFamily, fontSize: '1.15rem', color: tokens.colors.white, marginBottom: '16px', lineHeight: 1.6 }}>
                   {results.timeLeak?.description || ''}
                 </p>
             <ul style={{ listStyle: 'none', padding: 0 }}>
-              <li style={{ fontFamily: tokens.typography.fontFamily, fontSize: '1rem', color: tokens.colors.white, marginBottom: '12px', paddingLeft: '24px', position: 'relative' }}>
+              <li style={{ fontFamily: tokens.typography.fontFamily, fontSize: '1.15rem', color: tokens.colors.white, marginBottom: '12px', paddingLeft: '24px', position: 'relative' }}>
                 <span style={{ position: 'absolute', left: 0, color: tokens.colors.primary }}>•</span>
                 <strong>{emailHoursDisplay} hours/month on delegatable email coordination</strong> (approximately <strong style={{ color: tokens.colors.primary }}>${emailCost.cost.toLocaleString()}</strong>)
               </li>
-              <li style={{ fontFamily: tokens.typography.fontFamily, fontSize: '1rem', color: tokens.colors.white, marginBottom: '12px', paddingLeft: '24px', position: 'relative' }}>
+              <li style={{ fontFamily: tokens.typography.fontFamily, fontSize: '1.15rem', color: tokens.colors.white, marginBottom: '12px', paddingLeft: '24px', position: 'relative' }}>
                 <span style={{ position: 'absolute', left: 0, color: tokens.colors.primary }}>•</span>
                 Your <strong>{meetingActualHoursDisplay} hours of meetings/week</strong> actually consume <strong>{meetingTrueHoursDisplay} hours</strong>—<strong style={{ color: tokens.colors.primary }}>${meetingCost.monthlyCost.toLocaleString()}/month</strong> in meeting overhead
               </li>
-              <li style={{ fontFamily: tokens.typography.fontFamily, fontSize: '1rem', color: tokens.colors.white, marginBottom: '12px', paddingLeft: '24px', position: 'relative' }}>
+              <li style={{ fontFamily: tokens.typography.fontFamily, fontSize: '1.15rem', color: tokens.colors.white, marginBottom: '12px', paddingLeft: '24px', position: 'relative' }}>
                 <span style={{ position: 'absolute', left: 0, color: tokens.colors.primary }}>•</span>
                 Reclaim up to <strong>{aiTimebackHoursDisplay} hours/month</strong> (approximately <strong style={{ color: tokens.colors.primary }}>${aiTimeback.cost.toLocaleString()}</strong>)
               </li>
@@ -724,7 +724,7 @@ export default function ResultsPage() {
           <h2
             style={{
               fontFamily: "'Bebas Neue', sans-serif",
-              fontSize: '2rem',
+              fontSize: '2.3rem',
               letterSpacing: '0.05em',
               marginBottom: '24px',
               textAlign: 'center',
@@ -757,7 +757,7 @@ export default function ResultsPage() {
                 <div
                   style={{
                     fontFamily: "'Bebas Neue', sans-serif",
-                    fontSize: '0.875rem',
+                    fontSize: '1.006rem',
                     color: tokens.colors.primary,
                     textTransform: 'uppercase',
                     letterSpacing: '0.1em',
@@ -769,7 +769,7 @@ export default function ResultsPage() {
                 <h3
                   style={{
                     fontFamily: "'Bebas Neue', sans-serif",
-                    fontSize: '1.25rem',
+                    fontSize: '1.438rem',
                     letterSpacing: '0.05em',
                     marginBottom: '12px',
                     lineHeight: 1.2,
@@ -785,7 +785,7 @@ export default function ResultsPage() {
                 <p
                   style={{
                     fontFamily: tokens.typography.fontFamily,
-                    fontSize: '0.875rem',
+                    fontSize: '1.006rem',
                     color: 'rgba(255, 255, 255, 0.9)',
                     marginBottom: '16px',
                     lineHeight: 1.6,
@@ -796,22 +796,22 @@ export default function ResultsPage() {
                 </p>
                 <div style={{ borderTop: `1px solid ${tokens.colors.secondary}`, paddingTop: '16px', marginTop: 'auto' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <span style={{ fontFamily: tokens.typography.fontFamily, fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.8)' }}>Time Saved</span>
-                    <span style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: '1rem', color: tokens.colors.primary }}>{opportunity.timeSaved || 'N/A'}</span>
+                    <span style={{ fontFamily: tokens.typography.fontFamily, fontSize: '1.006rem', color: 'rgba(255, 255, 255, 0.8)' }}>Time Saved</span>
+                    <span style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: '1.15rem', color: tokens.colors.primary }}>{opportunity.timeSaved || 'N/A'}</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <span style={{ fontFamily: tokens.typography.fontFamily, fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.8)' }}>Monthly Value</span>
-                    <span style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: '1rem', color: tokens.colors.primary }}>
+                    <span style={{ fontFamily: tokens.typography.fontFamily, fontSize: '1.006rem', color: 'rgba(255, 255, 255, 0.8)' }}>Monthly Value</span>
+                    <span style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: '1.15rem', color: tokens.colors.primary }}>
                       {opportunity.monthlySavings ? `$${opportunity.monthlySavings.toLocaleString()}` : opportunity.value ? `$${opportunity.value}` : 'N/A'}
                     </span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <span style={{ fontFamily: tokens.typography.fontFamily, fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.8)' }}>Setup</span>
-                    <span style={{ fontFamily: tokens.typography.fontFamily, fontSize: '0.875rem', color: '#FFFFFF' }}>{opportunity.implementationTime || 'N/A'}</span>
+                    <span style={{ fontFamily: tokens.typography.fontFamily, fontSize: '1.006rem', color: 'rgba(255, 255, 255, 0.8)' }}>Setup</span>
+                    <span style={{ fontFamily: tokens.typography.fontFamily, fontSize: '1.006rem', color: '#FFFFFF' }}>{opportunity.implementationTime || 'N/A'}</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <span style={{ fontFamily: tokens.typography.fontFamily, fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.8)' }}>ROI</span>
-                    <span style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: '1rem', color: tokens.colors.primary }}>{opportunity.roi || 'N/A'}</span>
+                    <span style={{ fontFamily: tokens.typography.fontFamily, fontSize: '1.006rem', color: 'rgba(255, 255, 255, 0.8)' }}>ROI</span>
+                    <span style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: '1.15rem', color: tokens.colors.primary }}>{opportunity.roi || 'N/A'}</span>
                   </div>
                 </div>
               </motion.div>
@@ -835,7 +835,7 @@ export default function ResultsPage() {
             transition={{ duration: 0.6 }}
             style={{
               fontFamily: "'Bebas Neue', sans-serif",
-              fontSize: '2.5rem',
+              fontSize: '2.875rem',
               letterSpacing: '0.05em',
               marginBottom: '24px',
             }}
@@ -849,7 +849,7 @@ export default function ResultsPage() {
             transition={{ duration: 0.6, delay: 0.1 }}
             style={{
               fontFamily: tokens.typography.fontFamily,
-              fontSize: '1.125rem',
+              fontSize: '1.294rem',
               color: 'rgba(255, 255, 255, 0.8)',
               marginBottom: '32px',
               lineHeight: 1.6,
@@ -869,7 +869,7 @@ export default function ResultsPage() {
               backgroundColor: tokens.colors.primary,
               color: tokens.colors.dark,
               fontFamily: "'Bebas Neue', sans-serif",
-              fontSize: '1.25rem',
+              fontSize: '1.438rem',
               letterSpacing: '0.1em',
               padding: '16px 48px',
               border: 'none',
